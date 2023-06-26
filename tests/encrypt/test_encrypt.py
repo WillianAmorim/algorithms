@@ -6,7 +6,7 @@ def test_encrypt_message():
     with pytest.raises(TypeError, match="tipo inválido para key"):
         encrypt_message("string", "number")
 
-    with pytest.raises(TypeError, match="tipo inválido para message"):    
+    with pytest.raises(TypeError, match="tipo inválido para message"):
         encrypt_message(1, 1)
 
     result = encrypt_message('Tryber', 3)
